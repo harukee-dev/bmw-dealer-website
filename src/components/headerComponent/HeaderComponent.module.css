@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    color: white;
 }
 
 .headerContainer {
@@ -14,14 +13,17 @@
 .subdiv {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 15vh;
 }
 
 .button {
+    color: white;
     border: none;
     background-color: transparent;
     cursor: pointer;
     font-size: 1.7vh;
+    text-decoration: none;
 }
 
 .cartIconStyle {
