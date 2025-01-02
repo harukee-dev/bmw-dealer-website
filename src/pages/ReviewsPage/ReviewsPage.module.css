@@ -1,0 +1,11 @@
+.reviewsPage {
+    background-color: black;
+    height: 93vh;
+}
+
+.testText {
+    color: white;
+    text-align: center;
+    padding-top: 30vh;
+    font-size: 8vh;
+}

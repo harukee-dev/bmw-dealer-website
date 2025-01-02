@@ -1,11 +1,11 @@
 import React from 'react';
-import { HeaderComponent } from './components/headerComponent/HeaderComponent.tsx';
+import { HeaderComponent } from './components/headerComponent/HeaderComponent';
 import { Route, Routes } from 'react-router-dom';
-import { HomePage } from './pages/HomePage/HomePage.tsx';
-import { DesignPage } from './pages/ProductsPage/DesignPage.tsx';
-import { FeaturesPage } from './pages/CartPage/FeaturesPage.tsx';
-import { ReviewsPage } from './pages/UserProfilePage/ReviewsPage.tsx';
-import { OrderPage } from './pages/OrderPage/OrderPage.tsx';
+import { HomePage } from './pages/HomePage/HomePage';
+import { DesignPage } from './pages/DesignPage/DesignPage';
+import { FeaturesPage } from './pages/FeaturesPage/FeaturesPage';
+import { ReviewsPage } from './pages/ReviewsPage/ReviewsPage';
+import { OrderPage } from './pages/OrderPage/OrderPage';
 
 function App() {
   return (
