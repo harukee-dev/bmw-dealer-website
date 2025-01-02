@@ -1,11 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Hind Siliguri Medium", serif;
 }
 
 .headerContainer {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     height: 7vh;
     background-color: black;
 }
@@ -22,8 +24,29 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-    font-size: 1.7vh;
+    font-size: 2vh;
     text-decoration: none;
+    position: relative;
+    transition: 0.3s;
+}
+
+.button:hover {
+    color: #225fd1;
+}
+
+.button::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 0.1vh;
+    background-color: #225fd1;
+    transition: width 0.3s ease;
+}
+  
+.button:hover::after {
+   width: 100%;
 }
 
 .cartIconStyle {

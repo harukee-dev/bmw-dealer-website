@@ -2,9 +2,10 @@ import React from 'react';
 import { HeaderComponent } from './components/headerComponent/HeaderComponent.tsx';
 import { Route, Routes } from 'react-router-dom';
 import { HomePage } from './pages/HomePage/HomePage.tsx';
-import { ProductsPage } from './pages/ProductsPage/ProductsPage.tsx';
-import { CartPage } from './pages/CartPage/CartPage.tsx';
-import { UserProfilePage } from './pages/UserProfilePage/UserProfilePage.tsx';
+import { DesignPage } from './pages/ProductsPage/DesignPage.tsx';
+import { FeaturesPage } from './pages/CartPage/FeaturesPage.tsx';
+import { ReviewsPage } from './pages/UserProfilePage/ReviewsPage.tsx';
+import { OrderPage } from './pages/OrderPage/OrderPage.tsx';
 
 function App() {
   return (
@@ -14,9 +15,10 @@ function App() {
 
       <Routes>
         <Route path='/' element={<HomePage/>}/>
-        <Route path='/products' element={<ProductsPage/>}/>
-        <Route path='/cart' element={<CartPage/>}/>
-        <Route path='user_profile' element={<UserProfilePage/>}/>
+        <Route path='/design' element={<DesignPage/>}/>
+        <Route path='/features' element={<FeaturesPage/>}/>
+        <Route path='/reviews' element={<ReviewsPage/>}/>
+        <Route path='/order' element={<OrderPage/>}/>
       </Routes>
     </div>
   );
