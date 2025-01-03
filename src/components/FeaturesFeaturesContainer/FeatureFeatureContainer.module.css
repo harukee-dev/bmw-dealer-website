@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mainTitle{
+    font-size: 2.5vh;
+    cursor: default;
+    transition: 0.2s;
+}
+
+.neMainTitleFirst{
+    font-size: 2vh;
+    cursor: default;
+    transition: 0.2s;
+}
+
+.neMainTitleSecond{
+    font-size: 2vh;
+    cursor: default;
+    transition: 0.2s;
+}
+
+.mainTitle:hover, .neMainTitleFirst:hover, .neMainTitleSecond:hover{
+    color: #225fd1;
+}
+
+.titleDiv{
+    border-radius: 1vh;
+    width: 25vh;
+    text-align: center;
+    padding: 2vh;
+}
