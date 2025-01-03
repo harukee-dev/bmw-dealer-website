@@ -25,6 +25,7 @@ body{
     left: 50vh;
     transition: .3s;
     width: 125vh;
+    z-index: 0;
 }
 
 .carLeft:hover{
@@ -51,6 +52,7 @@ body{
     top: 20vh;
     left: 5vh;
     transition: 0.3s;
+    z-index: 0;
 }
 
 .textBack:hover{
