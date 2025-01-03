@@ -2,6 +2,10 @@
     color: white;
 }
 
+body {
+    overflow: hidden;
+}
+
 .homePage {
     background-color: #0b0b0b;
     height: 93vh;
@@ -16,7 +20,7 @@
     background: linear-gradient(to bottom, white 0%, rgb(0, 0, 0) 81%); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: #0b0b0b;
-    bottom: 20vh;
+    bottom: 40vh;
     right: 1vh;
     z-index: 0;
     cursor: default;
@@ -76,7 +80,7 @@
     z-index: 1;
     position: absolute;
     top: 35vh;
-    left: 65vh;
+    left: 61.5vh;
     transition: .3s;
     width: 115vh;
 }
@@ -102,6 +106,7 @@
     cursor: pointer;
     font-size: 2vh;
     transition: 0.2s;
+    text-decoration: none;
 }
 
 .learnMoreButton:hover {
