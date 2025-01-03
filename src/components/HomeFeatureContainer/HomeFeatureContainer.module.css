@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.firstTitle {
+    font-size: 1.7vh;
+    cursor: default;
+    transition: 0.2s;
+}
+
+.secondTitle {
+    font-size: 2.4vh;
+    cursor: default;
+    transition: 0.2s;
+}
+
+.firstTitle:hover, .secondTitle:hover {
+    color: #225fd1;
+}

@@ -3,15 +3,8 @@
 }
 
 .homePage {
-    background-color: black;
+    background-color: #0b0b0b;
     height: 93vh;
-}
-
-.testText {
-    color: white;
-    text-align: center;
-    padding-top: 30vh;
-    font-size: 8vh;
 }
 
 .bmwBackgroundTitle {
@@ -22,7 +15,7 @@
     -webkit-text-stroke: 2px transparent; 
     background: linear-gradient(to bottom, white 0%, rgb(0, 0, 0) 81%); 
     -webkit-background-clip: text;
-    -webkit-text-fill-color: black;
+    -webkit-text-fill-color: #0b0b0b;
     bottom: 20vh;
     right: 1vh;
     z-index: 0;
@@ -38,9 +31,94 @@
     top: 35vh;
 }
 
+.bmwMainFirstTitle {
+    z-index: 2;
+    position: absolute;
+    font-size: 10vh;
+    top: 35vh;
+    left: 20vh;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.bmwMainFirstTitle:hover {
+    letter-spacing: 1vh;
+}
+
+.mainTitleSecondStroke {
+    z-index: 2;
+    position: absolute;
+    font-size: 10vh;
+    top: 46vh;
+    left: 20vh;
+    display: flex;
+    gap: 2vh;
+}
+
+.bmwSecondStrokeWord {
+    font-size: 10vh;
+    cursor: default;
+    transition: 0.3s;
+}
+
+.bmwSecondStrokeWord:hover {
+    letter-spacing: 1vh;
+}
+
 .dotsImage {
     z-index: 1;
     position: absolute;
     top: 42vh;
     left: 12vh;
+}
+
+.carImage {
+    z-index: 1;
+    position: absolute;
+    top: 35vh;
+    left: 65vh;
+    transition: .3s;
+    width: 115vh;
+}
+
+.carImage:hover {
+    transform: scale(1.02);
+    top: 34.5vh;
+}
+
+.featuresContainer {
+    z-index: 1;
+    position: absolute;
+    top: 85vh;
+    left: 20vh;
+    display: flex;
+    align-items: end;
+    gap: 24vh;
+}
+
+.learnMoreButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2vh;
+    transition: 0.2s;
+}
+
+.learnMoreButton:hover {
+    color: #225fd1;
+}
+
+.learnMoreButton::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 0.1vh;
+    background-color: #225fd1;
+    transition: width 0.3s ease;
+}
+  
+.learnMoreButton:hover::after {
+   width: 10vh;
 }
