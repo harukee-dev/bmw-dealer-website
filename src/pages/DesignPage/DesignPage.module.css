@@ -1,11 +1,84 @@
-.designPage {
-    background-color: black;
-    height: 93vh;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.testText {
-    color: white;
-    text-align: center;
-    padding-top: 30vh;
-    font-size: 8vh;
+body {
+    overflow: hidden;
+}
+
+.designPage {
+    background-color: #0b0b0b;
+}
+
+.backgroundTitle {
+    font-family: "Hind Siliguri Bold";
+    font-size: 90vh;
+    position: absolute;
+    color: transparent;
+    -webkit-text-stroke: 0.05vh white;
+    animation: scroll-text 60s ease-in-out infinite alternate;
+    top: 0;
+    left: 20vh;
+    z-index: 0;
+    cursor: default;
+}
+
+.backgroundTitleTwo {
+    font-family: "Hind Siliguri Bold";
+    font-size: 90vh;
+    position: absolute;
+    color: transparent;
+    -webkit-text-stroke: 0.05vh white;
+    animation: scroll-text-two 60s ease-in-out infinite alternate;
+    bottom: 20vh;
+    left: 20vh;
+    z-index: 0;
+    cursor: default;
+}
+
+
+@keyframes scroll-text {
+    from {
+      transform: translateX(-10%); /* Текст вне экрана слева */
+    }
+    to {
+      transform: translateX(-70%); /* Текст вне экрана справа */
+    }
+  }
+
+  @keyframes scroll-text-two {
+    from {
+      transform: translateX(-70%); /* Текст вне экрана слева */
+    }
+    to {
+      transform: translateX(-10%); /* Текст вне экрана справа */
+    }
+  }
+
+.titleContainer {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.handwrittenTitle {
+    font-family: "Imperial Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6vh;
+    color: #225fd1;
+    margin-top: -6vh;
+    cursor: default;
+}
+
+.mainTitle {
+    font-size: 6vh;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.mainTitle:hover {
+    letter-spacing: .5vh;
 }
