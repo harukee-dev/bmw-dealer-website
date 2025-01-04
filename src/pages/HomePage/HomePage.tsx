@@ -3,6 +3,7 @@ import classes from "./HomePage.module.css"
 import dotsImage from "../../images/dots-under-bmw-title.png"
 import carImage from "../../images/bmw_home-page_image.png"
 import { HomeFeatureContainer } from "../../components/HomeFeatureContainer/HomeFeatureContainer"
+import { Link } from "react-router-dom"
 
 export const HomePage = () => {
     return (
@@ -18,7 +19,7 @@ export const HomePage = () => {
             <img className={classes.dotsImage} src={dotsImage} alt="dots-image" />
             <img className={classes.carImage} src={carImage} alt="car-image" />
             <div className={classes.featuresContainer}>
-                <button className={classes.learnMoreButton}>Learn More</button>
+                <Link to={"/features"} className={classes.learnMoreButton}>Learn More</Link>
                 <HomeFeatureContainer firstTitle="Max Speed" secondTitle="250 km/h"/>
                 <HomeFeatureContainer firstTitle="Engine" secondTitle="4.4L"/>
                 <HomeFeatureContainer firstTitle="Power" secondTitle="600+ BHP"/>
