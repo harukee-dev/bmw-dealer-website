@@ -82,3 +82,59 @@ body {
 .mainTitle:hover {
     letter-spacing: .5vh;
 }
+
+.shadowImage {
+    position: absolute;
+    z-index: 0;
+    left: -30vh;
+    width: 300vh;
+    top: -20vh;
+}
+
+.carImage {
+    position: absolute;
+    z-index: 1;
+    width: 130vh;
+    top: 20vh;
+    left: 70vh;
+}
+
+.buttonsContainer {
+    position: absolute;
+    display: flex;
+    gap: 2vh;
+    top: 50vh;
+    left: 15vh;
+}
+
+.buttonColor {
+    color: transparent;
+    width: 5vh;
+    height: 5vh;
+    border-radius: none;
+    border: 0.2vh solid white;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.buttonColor:hover {
+    border: 0.5vh solid white;
+}
+
+.colorTitleContainer {
+    position: absolute;
+    display: flex;
+    gap: 1vh;
+    top: 40vh;
+    left: 10vh;
+}
+
+.colorTitle {
+    font-size: 6vh;
+    cursor: default;
+    transition: 0.3s;
+}
+
+.colorTitle:hover {
+    letter-spacing: 0.5vh;
+}

@@ -20,7 +20,7 @@ body {
     background: linear-gradient(to bottom, white 0%, rgb(0, 0, 0) 81%); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: #0b0b0b;
-    bottom: 40vh;
+    bottom: 22vh;
     right: 1vh;
     z-index: 0;
     cursor: default;
