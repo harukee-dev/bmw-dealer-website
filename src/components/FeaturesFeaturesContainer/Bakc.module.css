@@ -1,0 +1,28 @@
+body{
+    overflow: hidden;
+}
+
+
+.back {
+    font-family: "Hind Siliguri Bold";
+    font-size: 60vh;
+    position: absolute;
+    color: transparent;
+    -webkit-text-stroke: 0.05vh white;
+    animation: scroll-text 10s ease-in-out infinite alternate;
+    bottom: 20vh;
+    left: 100vh;
+    z-index: 0;
+    cursor: default;
+    user-select: none;
+}
+
+
+@keyframes scroll-text {
+    from {
+      transform: translateX(-10%);
+    }
+    to {
+      transform: translateX(-40%); 
+    }
+  }

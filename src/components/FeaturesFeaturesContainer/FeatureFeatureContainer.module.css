@@ -4,21 +4,31 @@
 }
 
 .mainTitle{
-    font-size: 2.5vh;
+    font-family: "Imperial Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 9vh;
+    color: #225fd1;
+    margin-top: -6vh;
     cursor: default;
-    transition: 0.2s;
+    top: 30vh;
+    left: 75vh;
+    transition: 0.3s;
+    z-index: 1;
 }
 
 .neMainTitleFirst{
-    font-size: 2vh;
+    font-size: 3vh;
     cursor: default;
     transition: 0.2s;
+    font-family: "Montserrat", Bold 700;
 }
 
 .neMainTitleSecond{
-    font-size: 2vh;
+    font-size: 3vh;
     cursor: default;
     transition: 0.2s;
+    font-family: "Montserrat", Bold 700;
 }
 
 .mainTitle:hover, .neMainTitleFirst:hover, .neMainTitleSecond:hover{
@@ -27,7 +37,7 @@
 
 .titleDiv{
     border-radius: 1vh;
-    width: 25vh;
+    width: 35vh;
     text-align: center;
     padding: 2vh;
 }

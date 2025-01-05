@@ -24,6 +24,7 @@ body {
     right: 1vh;
     z-index: 0;
     cursor: default;
+    user-select: none;
 }
 
 .bmwMainTitle {

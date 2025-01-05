@@ -19,18 +19,20 @@ body{
     font-size: 8vh;
 }
 
-.carLeft{
+.carLeft {
     position: absolute;
-    top: -5vh;
-    left: 50vh;
-    transition: .3s;
-    width: 125vh;
-    z-index: 0;
+    left: 71vh;
+    top: 20vh;
+    width: 100vh;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+
 }
 
-.carLeft:hover{
-    transform: scale(1.05);
-    top: -0,5vh;
+.carLeft:hover {
+    transform: scale(1.05) translateY(-1vh);
+
+    cursor: pointer;
 }
 
 .titleFeature{
@@ -46,16 +48,60 @@ body{
 }
 
 .textBack{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 10vh;
+    font-family: "Montserrat", Bold 700;
+    font-size: 13vh;
     position: absolute;
     top: 20vh;
-    left: 5vh;
+    left: 14vh;
     transition: 0.3s;
-    z-index: 0;
+    z-index: 1;
 }
 
-.textBack:hover{
-    letter-spacing: 1vh;
+.textBack1{
+    font-family: "Montserrat", Bold 700;
+    font-size: 13vh;
+    position: absolute;
+    top: 34vh;
+    left: 14vh;
+    transition: 0.3s;
+    z-index: 1;
+}
 
+.textBack2{
+    font-family: "Montserrat", Bold 700;
+    font-size: 13vh;
+    position: absolute;
+    top: 34vh;
+    left: 40vh;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.textBack:hover , .textBack1:hover , .textBack2:hover{
+    letter-spacing: 1vh;
+}
+
+
+
+  .titleCar{
+    font-family: "Imperial Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15vh;
+    color: #225fd1;
+    margin-top: -6vh;
+    cursor: default;
+    position: absolute;
+    top: 45vh;
+    left: 30vh;
+    transition: 0.3s;
+    z-index: 1;
+  }
+  
+
+.carBack{
+    position: absolute;
+    top: 0vh;
+    left: 30vh;
+    z-index: 0;
 }
