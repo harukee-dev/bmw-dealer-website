@@ -13,7 +13,6 @@ export const FeatureFeatureContainer: React.FC<IFeatureFeatureContainerProps> = 
             <p className={classes.mainTitle}>{mainTitle}</p>
             <p className={classes.neMainTitleFirst}>{neMainTitleFirst}</p>
             <p className={classes.neMainTitleSecond}>{neMainTitleSecond}</p>
-
         </div>
     )
 }

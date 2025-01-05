@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./Bakc.module.css"
 
 interface BackProps {
-    back:any
+    back:string
 }
 
     export const Back: React.FC<BackProps> = ({ back }) => {
