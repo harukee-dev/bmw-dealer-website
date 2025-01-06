@@ -1,11 +1,133 @@
+*{
+    color: white;
+    font-family: "Hind Siliguri Medium";
+}
+
+body{
+    overflow: hidden;
+}
+
+
+
 .reviewsPage {
-    background-color: black;
-    height: 93vh;
+    background-color: #0b0b0b;
+    min-height: 93vh;
+    width: 100%;
 }
 
 .testText {
     color: white;
     text-align: center;
     padding-top: 30vh;
-    font-size: 8vh;
+    font-size: clamp(2rem, 8vw, 8vh);
 }
+
+.reviewsContainer {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: clamp(20px, 5vw, 40px) clamp(10px, 3vw, 20px);
+}
+
+.reviewsTitle {
+    color: white;
+    text-align: center;
+    font-size: clamp(1.8rem, 5vw, 3em);
+    margin-bottom: clamp(25px, 6vw, 50px);
+}
+
+.review {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: clamp(8px, 2vw, 15px);
+    padding: clamp(15px, 3vw, 25px);
+    margin-bottom: clamp(20px, 4vw, 30px);
+    transition: transform 0.3s ease;
+}
+
+.review:hover {
+    transform: translateY(-5px);
+}
+
+.reviewHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: clamp(10px, 2vw, 15px);
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.reviewHeader h3 {
+    color: #fff;
+    font-size: clamp(1.2rem, 3vw, 1.5em);
+    margin: 0;
+}
+
+.date {
+    color: #888;
+    font-size: clamp(0.8rem, 2vw, 0.9em);
+}
+
+.reviewText {
+    color: #ddd;
+    font-size: clamp(1rem, 2.5vw, 1.1em);
+    line-height: 1.6;
+    font-style: italic;
+}
+
+@media (max-width: 480px) {
+    .reviewHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .reviewsContainer {
+        width: 95%;
+    }
+}
+
+.backgroundTitle {
+    font-family: "Hind Siliguri Bold";
+    font-size: 90vh;
+    position: absolute;
+    color: transparent;
+    -webkit-text-stroke: 0.05vh white;
+    animation: scroll-text 60s ease-in-out infinite alternate;
+    top: 0;
+    left: 20vh;
+    z-index: 0;
+    cursor: default;
+    user-select: none;
+}
+
+.backgroundTitleTwo {
+    font-family: "Hind Siliguri Bold";
+    font-size: 90vh;
+    position: absolute;
+    color: transparent;
+    -webkit-text-stroke: 0.05vh white;
+    animation: scroll-text-two 60s ease-in-out infinite alternate;
+    bottom: 20vh;
+    left: 20vh;
+    z-index: 0;
+    cursor: default;
+    user-select: none;
+}
+
+@keyframes scroll-text {
+    from {
+      transform: translateX(-10%); /* Текст вне экрана слева */
+    }
+    to {
+      transform: translateX(-70%); /* Текст вне экрана справа */
+    }
+  }
+
+  @keyframes scroll-text-two {
+    from {
+      transform: translateX(-70%); /* Текст вне экрана слева */
+    }
+    to {
+      transform: translateX(-10%); /* Текст вне экрана справа */
+    }
+  }
