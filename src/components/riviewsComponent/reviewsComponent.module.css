@@ -1,0 +1,31 @@
+.text{
+    color: white;
+    font-size: 3vh;
+    cursor: default;
+    transition: 0.3s;
+    font-family: "Montserrat", Bold 700;
+    cursor: default;
+    z-index: 1;
+    margin: 5vh;
+}
+
+.text:hover{
+    color: #225fd1;
+}
+
+.name{
+    font-family: "Imperial Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5vh;
+    color: #225fd1;
+    cursor: default;
+    transition: 0.3s;
+    z-index: 1;
+    margin-top: 10vh;
+
+}
+
+.index{
+    color: transparent;
+}
