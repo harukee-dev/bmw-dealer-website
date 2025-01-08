@@ -1,133 +1,108 @@
 *{
     color: white;
-    font-family: "Hind Siliguri Medium";
+
 }
 
 body{
     overflow: hidden;
 }
 
-
-
-.reviewsPage {
-    background-color: #0b0b0b;
-    min-height: 93vh;
-    width: 100%;
-}
-
-.testText {
-    color: white;
-    text-align: center;
-    padding-top: 30vh;
-    font-size: clamp(2rem, 8vw, 8vh);
-}
-
-.reviewsContainer {
-    width: 90%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: clamp(20px, 5vw, 40px) clamp(10px, 3vw, 20px);
-}
-
-.reviewsTitle {
-    color: white;
-    text-align: center;
-    font-size: clamp(1.8rem, 5vw, 3em);
-    margin-bottom: clamp(25px, 6vw, 50px);
-}
-
-.review {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: clamp(8px, 2vw, 15px);
-    padding: clamp(15px, 3vw, 25px);
-    margin-bottom: clamp(20px, 4vw, 30px);
-    transition: transform 0.3s ease;
-}
-
-.review:hover {
-    transform: translateY(-5px);
-}
-
-.reviewHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: clamp(10px, 2vw, 15px);
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.reviewHeader h3 {
-    color: #fff;
-    font-size: clamp(1.2rem, 3vw, 1.5em);
-    margin: 0;
-}
-
-.date {
-    color: #888;
-    font-size: clamp(0.8rem, 2vw, 0.9em);
-}
-
-.reviewText {
-    color: #ddd;
-    font-size: clamp(1rem, 2.5vw, 1.1em);
-    line-height: 1.6;
-    font-style: italic;
-}
-
-@media (max-width: 480px) {
-    .reviewHeader {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .reviewsContainer {
-        width: 95%;
-    }
-}
-
-.backgroundTitle {
-    font-family: "Hind Siliguri Bold";
-    font-size: 90vh;
+  .carBackgraund{
+    z-index: -1;
     position: absolute;
-    color: transparent;
-    -webkit-text-stroke: 0.05vh white;
-    animation: scroll-text 60s ease-in-out infinite alternate;
     top: 0;
-    left: 20vh;
-    z-index: 0;
-    cursor: default;
-    user-select: none;
-}
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+  }
 
-.backgroundTitleTwo {
-    font-family: "Hind Siliguri Bold";
-    font-size: 90vh;
+.reviewsContainer{
+    z-index: 1;
     position: absolute;
-    color: transparent;
-    -webkit-text-stroke: 0.05vh white;
-    animation: scroll-text-two 60s ease-in-out infinite alternate;
-    bottom: 20vh;
-    left: 20vh;
-    z-index: 0;
-    cursor: default;
-    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 15vh;
+    right: 10vh;
+    width: 30vw;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 1vh;
+    transition: box-shadow 0.5s ease;
+    
 }
 
-@keyframes scroll-text {
-    from {
-      transform: translateX(-10%); /* Текст вне экрана слева */
-    }
-    to {
-      transform: translateX(-70%); /* Текст вне экрана справа */
-    }
-  }
+.reviewsContainer:hover{
+    box-shadow: 0 0 5vh rgba(0, 0, 0);
+}
 
-  @keyframes scroll-text-two {
-    from {
-      transform: translateX(-70%); /* Текст вне экрана слева */
-    }
-    to {
-      transform: translateX(-10%); /* Текст вне экрана справа */
-    }
-  }
+.button1{
+    width: 2vh;
+    height: 2vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 0 0.5vh;
+    position: absolute;
+    bottom: 4vh;
+    left: 15vh;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button2{
+    width: 2vh;
+    height: 2vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 0 0.5vh;
+    position: absolute;
+    bottom: 4vh;
+    left: 22vh;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button3{ width: 2vh;
+    height: 2vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 0 0.5vh;
+    position: absolute;
+    bottom: 4vh;
+    left: 29vh;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button4{
+    width: 2vh;
+    height: 2vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 0 0.5vh;
+    position: absolute;
+    bottom: 4vh;
+    left: 36vh;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
